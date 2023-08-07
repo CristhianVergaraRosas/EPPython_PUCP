@@ -1,0 +1,54 @@
+{% load static %}
+ 
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>        
+        <div class="bg-primary">
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 text-white">
+                        <div class="row">
+                            <div class="col-15">
+                                <h3>Panel Tiendas - Productos</h3>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!--PRODUCTOS-->
+        <div class="bg-secondary container ">
+            <div class="row justify-content-between">
+                <div class="col-2 text-white">
+                    <h2>Productos</h2>
+                </div>
+                <div class="col-2 mt-1">                    
+                    <a class="btn btn-info" href="{% url 'gestionTienda:productos' %}">Ir a</a>
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="bg-secondary container ">
+            <div class="row justify-content-between">
+                <div class="col-2 text-white">
+                    <h2>Tiendas</h2>
+                </div>
+                <div class="col-2 mt-1">  
+                    <a class="btn btn-info" href="{% url 'gestionTienda:tienda' %}">Ir a</a>                                              
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
